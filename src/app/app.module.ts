@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DataWystComponent } from './data-wyst/data-wyst.component';
-import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { Logbook } from './log-book/logbook';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataWystComponent,
-    ProfileEditorComponent
+    Logbook
   ],
   imports: [
     BrowserModule,

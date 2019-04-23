@@ -10,9 +10,6 @@ export type EditorType = 'name' | 'profile';
 export class AppComponent {
   editor: EditorType = 'name';
 
-  get showNameEditor() {
-    return this.editor === 'name';
-  }
 
   get showProfileEditor() {
     return this.editor === 'profile';
