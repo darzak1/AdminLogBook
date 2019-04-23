@@ -1,21 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="background-image:
-src="\Users\RCIKrakow\IdeaProjects\AdminLogBook\src\app\contakct\img\logo_naglowka\text-align:center">
-  <h1>
-    {{ title }}!
-  </h1>
-  <img  width="300" alt="RCI Logo" src="data:C:\Users\RCI Krakow\IdeaProjects\AdminLogBook\src\app\contakct\img\logoRCI.jpg">
-</div>
-<!--<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>-->
+<h1>Reactive Forms</h1>
 
+<nav>
+  <a (click)="toggleEditor('name')">Name Editor</a>
+  <a (click)="toggleEditor('profile')">Profile Editor</a>
+</nav>
+
+<app-data-wyst *ngIf="showNameEditor"></app-data-wyst>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
